@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "c41cfb01-0dff-474a-8a80-df06ffdaa619",
+		"name": "Konferencja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6372954"
+	},
+	"item": [
+		{
+			"name": "CreateParticipant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\":\"Michal\",\r\n    \"email\":\"Mr@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/participant/add/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"participant",
+						"add",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MakeReservation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\":\"Michal\",\r\n    \"email\":\"Mr@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservation/add/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"add",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelReservation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservation/cancel/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"cancel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditEmail",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Mr1111@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/participant/edit/Michal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"participant",
+						"edit",
+						"Michal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShowAllParticipants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/participant/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"participant",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShowAllReservations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservation/showReservations/Michal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"showReservations",
+						"Michal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PercentShareIntrestInTopic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservation/interestInTopic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"interestInTopic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PercentShareIntrestInLecture",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservation/interestInLecture",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"interestInLecture"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
